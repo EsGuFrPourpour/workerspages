@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="../img/BanderaDeLaCiudadIcon.png">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <title>Rubros Gualeguaychú</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">Menú</a>
+                        <ul class="submenu">
+                            <li><a href="polirrubros.html" target="_blank">Polirrubros</a></li>
+                            <li><a href="albañiles.html" target="_blank">Albañiles</a></li>
+                            <li><a href="electricistas.html" target="_blank">Electricistas</a></li>
+                            <li><a href="plomeros.html" target="_blank">Plomeros</a></li>
+                            <li><a href="otrosrubros.html" target="_blank">Otros rubros</a></li>
+                            <li><a href="../index.html">Inicio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Rubros Gualeguaychú</h1>
+            <img src="../img/BanderaDeLaCiudad.jpg" alt="bandera de la ciudad de Gualeguaychú">
+        </header>
+        <main>
+            <section>
+                <h2>Formulario de registro</h2>
+                <p>Rellena el formulario con tus datos para poder pertenecer a nuestra lista de profecionales.</p>
+                <form action="">
+                    <label for="profecion">Elija aqui su profecion</label>
+                    <select name="profecion" id="profecion">
+                        <option value="">Polirrubro</option>
+                        <option value="">Albañil</option>
+                        <option value="">Electricista</option>
+                        <option value="">Plomero</option>
+                        <option value="">Otro rubro</option>
+                    </select><br>
+                    <label for="nombres">Nombre</label><br>
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres"><br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
+                    <label for="telefono">Teléfono</label><br>
+                    <input type="tel" name="telefono" id="telefono"><br>
+                    <label for="archivo">Inserte una imagen donde su rostro sea visible.</label><br>
+                    <input type="file" name="archivo" id="archivo"><br>
+                <button>enviar</button>
+                </form>
+            </section>
+            <aside>
+                <!--el aside seria para colocar a trabajadores que paguen por publicidad, dicha publicidad servira para mantener la pagina en circulacion-->
+            </aside>
+        </main>
+        <footer>
+            <a title="logo de linkedin"  href="https://www.linkedin.com/in/esteban-pourpour-360a35235/" target="_blank"><img src="../img/linkedin-svgrepo-com.svg" alt="logo de linkedin" height="50px" width="50px"></a>
+            <p>&copy; 2024 Francisco Pourpour</p>
+        </footer>
+    </body>
+</html>

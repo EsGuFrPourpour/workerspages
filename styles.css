@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*aqui inicia el css del header*/
+header{
+    top: 0;
+      position: fixed;
+      width: 100%;
+      background-color: #00465e;
+      justify-content: space-between;
+  display: flex;
+  align-items: center;
+  }
+  h1 { 
+   color:white;
+   font-family: "Nunito Sans", sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 0;
+  }
+  header img{
+   width: 100px;
+   height: 50px;
+  }
+  header a{
+      color: #03045e;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+  }
+  nav {
+      width: 250px;
+      text-align: center;
+  }
+  
+  .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+  }
+  
+  .nav > li {
+      position: relative;
+  }
+  
+  .nav > li > a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .nav > li > a:hover {
+    width: 250px;
+      background-color: #002332;
+  }
+  
+  .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #002332;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 250px;
+  }
+  
+  .submenu > li > a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .submenu > li > a:hover {
+      background-color: #575757;
+  }
+  
+  .nav > li:hover .submenu {
+      display: block;
+  }
+main{
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+/*-----------------------------
+-----------------------------
+start UL styles*/
+.ListaHorizontal{
+display: grid;
+grid-auto-flow: column ;
+grid-auto-columns: 30%;
+
+overflow-x: auto;
+overscroll-behavior-inline: contain;
+}
+.ListaHorizontal figure{
+    justify-items: center;
+    width: 300px;
+    background-color: #e8f4fe;
+}
+.ListaHorizontal img{
+    width: 150px;
+    height: 150px;
+}
+.ListaHorizontal figcaption{
+    justify-items: center;
+}
+/*end UL styles
+-----------------------------
+-----------------------------
+start footer styles*/
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    align-content: center;
+    background-color: #00465e;
+    color: white;
+}
+.footerItem{
+    margin-top: 5px;
+}
+footer a img{
+    width: 40px;
+    height: 40px;
+}
+/*end footer styles
+-----------------------------
+-----------------------------
+media queries*/
+@media screen and (max-width: 1024px) {
+    .ListaHorizontal{
+        overflow: scroll;;
+    }    
+}
+@media screen and (max-width: 768px) { 
+    header {
+        width: 100vw;
+        display: grid;
+        grid-auto-flow: column ;
+    }
+    header img {
+        display: none;
+    }
+    nav {
+        width: 25vw;
+    }
+    h1 {
+    font-size: 5vw ;
+    margin-right: 10px;
+    }
+    .iframe{
+width: 100%;
+    }
+}
