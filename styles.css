@@ -10,6 +10,7 @@ body{
 }
 /*aqui inicia el css del header*/
 header{
+    z-index: 1000;
     top: 0;
       position: fixed;
       width: 100%;
@@ -89,32 +90,27 @@ header{
       display: block;
   }
 main{
-    margin-top: 90px;
-    margin-bottom: 30px;
+    margin: 90px 1px 30px 1px ;
 }
 
 /*-----------------------------
 -----------------------------
 start UL styles*/
 .ListaHorizontal{
+
 display: grid;
 grid-auto-flow: column ;
 grid-auto-columns: 30%;
-
+align-items: center;
 overflow-x: auto;
 overscroll-behavior-inline: contain;
-}
-.ListaHorizontal figure{
-    justify-items: center;
-    width: 300px;
-    background-color: #e8f4fe;
 }
 .ListaHorizontal img{
     width: 150px;
     height: 150px;
 }
-.ListaHorizontal figcaption{
-    justify-items: center;
+.card{
+align-items: center;
 }
 /*end UL styles
 -----------------------------
