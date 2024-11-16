@@ -100,9 +100,7 @@ start UL styles*/
 
 display: grid;
 grid-auto-flow: column ;
-grid-auto-columns: 30%;
-align-items: center;
-overflow-x: auto;
+grid-auto-columns: 35%;
 overscroll-behavior-inline: contain;
 }
 .ListaHorizontal img{
@@ -141,14 +139,24 @@ footer a img{
 media queries*/
 @media screen and (max-width: 1024px) {
     .ListaHorizontal{
+        height: 290px;
+        align-items: normal;
         justify-content: start;
         justify-items: center;
-        overflow: scroll;;
+        overflow: scroll;
     }    
 }
 @media screen and (max-width: 768px) { 
+    .ListaHorizontal{
+        width: 350px;
+        height: 290px;
+        align-items: normal;
+        justify-content: start;
+        justify-items: center;
+        overflow: scroll;
+    } 
     header {
-        width: 100vw;
+        width: 100%;
         display: grid;
         grid-auto-flow: column ;
     }
@@ -166,10 +174,20 @@ media queries*/
 width: 100%;
     }
     .card{
-      width: 20vw;
+        margin: 0px 10px 0px 10px;
+        border: 0px;
+      width: 40vw;
       height: 50vw;
     }
     .card img {
-        width: 20vw;
+        width: 24vw;
+    }
+    .card-text{
+        font-size: x-small;
+    }
+    .btn{
+        padding: 2px 4px 2px 4px;
+        height: 10vw;
+        font-size: small;
     }
 }
