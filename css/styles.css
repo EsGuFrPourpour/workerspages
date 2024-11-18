@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-/*aqui inicia el css del header*/
+/*header style*/
 header{
     z-index: 1000;
     top: 0;
@@ -93,9 +93,10 @@ main{
     margin: 90px 1px 30px 1px ;
 }
 
-/*-----------------------------
+/*end header style
 -----------------------------
-start UL styles*/
+-----------------------------
+start cards styles*/
 .ListaHorizontal{
 
 display: grid;
@@ -115,7 +116,7 @@ z-index: 1;
 .card-body{
     align-items: center;
 }
-/*end UL styles
+/*end cards styles
 -----------------------------
 -----------------------------
 start footer styles*/
@@ -199,3 +200,4 @@ width: 100%;
         font-size: 12px ;
     }
 }
+/* end media queries styles*/
