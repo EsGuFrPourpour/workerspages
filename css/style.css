@@ -1,0 +1,223 @@
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  header img {
+    display: none;
+  }
+  header h1 {
+    font-size: 5vw;
+    margin-right: 10px;
+  }
+  header nav {
+    width: 25vw;
+  }
+  .iframe {
+    transform: none;
+    width: 100%;
+  }
+  .ListaHorizontal {
+    width: 480px;
+    height: 330px;
+    align-items: normal;
+    justify-content: start;
+    overflow: scroll;
+  }
+  .ListaHorizontal .card {
+    margin: 0px 30px 0px 10px;
+    width: 42vw;
+    height: 82vw;
+  }
+  .ListaHorizontal .card .card-img-top {
+    width: 30vw;
+    height: 30vw;
+  }
+  .ListaHorizontal .card .card-body .card-text {
+    font-size: small;
+  }
+  .ListaHorizontal .card .card-body .btn {
+    padding: 2px 4px 2px 4px;
+    height: 7vw;
+    width: 30vw;
+    font-size: small;
+  }
+  footer p {
+    padding: 4px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .iframe {
+    transform: none;
+    width: 100%;
+  }
+}
+@media (min-width: 834px) and (max-width: 1024px) {
+  .ListaHorizontal {
+    height: 290px;
+    align-items: normal;
+    justify-content: start;
+    justify-items: center;
+    overflow: scroll;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body main {
+  margin: 90px 1px 30px 1px;
+}
+body main iframe {
+  transform: translate(60%, 0px);
+}
+
+header {
+  z-index: 1000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to right, #00465e, #6c80f0);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+header img {
+  width: 100px;
+  height: 50px;
+}
+header a {
+  color: #03045e;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav {
+  width: 250px;
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.nav li {
+  position: relative;
+}
+.nav li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.nav li a:hover {
+  width: 250px;
+  background-color: #002332;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #002332;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+}
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+.submenu li a:hover {
+  background-color: #575757;
+}
+
+.nav > li:hover .submenu {
+  display: block;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+  align-content: center;
+  background-color: #00465e;
+  color: white;
+}
+footer a img {
+  width: 40px;
+  height: 40px;
+}
+
+.footerItem {
+  margin-top: 5px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 10%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+article {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 15% cover 30%;
+}
+article .ListaHorizontal {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 35%;
+  overscroll-behavior-inline: contain;
+  overflow: scroll;
+}
+article .ListaHorizontal .card {
+  background-color: transparent;
+  align-items: center;
+  z-index: 1;
+}
+article .ListaHorizontal .card img {
+  width: 150px;
+  height: 150px;
+}
+article .ListaHorizontal .card .card-body {
+  justify-content: center;
+  align-items: center;
+}
+article .ListaHorizontal .card a {
+  background-color: #00465e;
+}
+
+/*# sourceMappingURL=style.css.map */

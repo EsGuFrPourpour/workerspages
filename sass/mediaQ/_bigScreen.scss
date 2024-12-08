@@ -1,0 +1,9 @@
+@media (min-width: 834px) and (max-width: 1024px) {
+    .ListaHorizontal{
+        height: 290px;
+        align-items: normal;
+        justify-content: start;
+        justify-items: center;
+        overflow: scroll;
+    }    
+}

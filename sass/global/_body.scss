@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lavender;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    main{
+        margin: 90px 1px 30px 1px ;
+        iframe{
+            transform: translate(60%, 0px);
+        }
+    }
+}
+

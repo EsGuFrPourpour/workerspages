@@ -1,0 +1,52 @@
+@media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column ;
+        img {
+            display: none;
+        }
+        h1 {
+            font-size: 5vw ;
+            margin-right: 10px;
+        }
+        nav {
+            width: 25vw;
+        }
+    }
+    .iframe{
+        transform: none;
+        width: 100%;
+    }
+    .ListaHorizontal{
+        width: 480px;
+        height: 330px;
+        align-items: normal;
+        justify-content: start;
+        overflow: scroll;
+        .card{
+            margin: 0px 30px 0px 10px;
+          width: 42vw;
+          height: 82vw;
+          .card-img-top{
+            width: 30vw;
+            height: 30vw;
+          }
+          .card-body{
+                .card-text{
+                    font-size: small;
+                }
+                .btn{
+                    padding: 2px 4px 2px 4px;
+                    height: 7vw;
+                    width: 30vw;
+                    font-size: small;
+                }
+            }
+        }
+    }
+    footer p {
+        padding: 4px;
+        font-size: 12px ;
+    }
+}
